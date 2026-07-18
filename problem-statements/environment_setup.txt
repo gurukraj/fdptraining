@@ -1,0 +1,36 @@
+Lab Infrastructure & Problem Statements — Complete
+Online Infrastructure: GitHub Codespaces
+Each project now has a .devcontainer/devcontainer.json that auto-provisions the entire environment when a faculty member clicks "Open in Codespace":
+
+Project	Image	Auto-Runs	Port
+Student Grade Calculator	python:3.12	pip install + seed	8000
+Weather Dashboard API	python:3.12	pip install + seed	5000
+E-Commerce Product Catalog	javascript-node:20	npm install + seed	3000
+Task Management API	java:21	mvn clean compile	8080
+Zero local installation. Faculty click one button, wait 60 seconds, and have a working VS Code with terminal, all dependencies installed, and sample data loaded.
+
+Trimmed Problem Statements
+Created in problem-statements/:
+
+File	Lines	Content
+PS_Student_Grade_Calculator.md	87	6 FRs, 7 endpoints, grade scale, 2 entities
+PS_Weather_Dashboard_API.md	104	6 FRs, 12 endpoints, alert rules, 4 entities
+PS_ECommerce_Product_Catalog.md	88	6 FRs, 11 endpoints, 8 categories, price ranges
+PS_Task_Management_API.md	135	8 FRs, 14 endpoints, status transition rules, auth model
+What's included: Scenario, tech stack, FR table with acceptance criteria, endpoint summary table, data model fields, business rules, success criteria.
+
+What's excluded (by design): No code snippets, no architecture, no pseudocode, no file structure, no implementation hints. Faculty feed these to AI and let it figure out the implementation.
+
+Master Lab Guide
+LAB_SETUP_GUIDE.md — Complete setup guide with:
+
+3-minute quick start for Codespaces
+Run commands for all 4 projects
+Lab workflow (understand -> setup -> implement -> verify)
+Free tier details (60 hours/month)
+Troubleshooting table
+Local fallback instructions
+What to Share with Faculty
+Problem statement (from problem-statements/) — this is the lab exercise handout
+Lab setup guide (LAB_SETUP_GUIDE.md) — how to access Codespaces
+The full SDD files stay in the repo as reference but are not handed out — they're what the AI generates from

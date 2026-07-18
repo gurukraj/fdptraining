@@ -1,0 +1,34 @@
+{
+  "name": "ecommerce-product-catalog",
+  "version": "1.0.0",
+  "description": "E-Commerce Product Catalog API - SDD Workshop Exercise",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --coverage --forceExit --detectOpenHandles",
+    "seed": "node data/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "nedb-promises": "^6.2.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "express-validator": "^7.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/server.js"
+    ]
+  }
+}

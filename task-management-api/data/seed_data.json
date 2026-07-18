@@ -1,0 +1,48 @@
+{
+  "categories": [
+    { "id": 1, "name": "Bug", "description": "Bug fixes and defects" },
+    { "id": 2, "name": "Feature", "description": "New feature development" },
+    { "id": 3, "name": "Research", "description": "Research and investigation tasks" },
+    { "id": 4, "name": "Documentation", "description": "Documentation and knowledge base" },
+    { "id": 5, "name": "Testing", "description": "Testing and QA related tasks" }
+  ],
+  "tasks": [
+    { "id": 1, "title": "Fix login page CSS", "description": "Login button misaligned on mobile devices running iOS 16+", "status": "OPEN", "priority": "HIGH", "categoryId": 1, "createdBy": "user1" },
+    { "id": 2, "title": "Implement user dashboard", "description": "Create a dashboard showing task statistics and recent activity", "status": "IN_PROGRESS", "priority": "HIGH", "categoryId": 2, "createdBy": "user2" },
+    { "id": 3, "title": "Research caching strategies", "description": "Evaluate Redis vs Caffeine for application-level caching", "status": "OPEN", "priority": "MEDIUM", "categoryId": 3, "createdBy": "user1" },
+    { "id": 4, "title": "Write API documentation", "description": "Document all REST endpoints using OpenAPI/Swagger format", "status": "IN_PROGRESS", "priority": "MEDIUM", "categoryId": 4, "createdBy": "user3" },
+    { "id": 5, "title": "Fix date parsing bug", "description": "Date fields not parsing correctly for timezone UTC+13", "status": "DONE", "priority": "HIGH", "categoryId": 1, "createdBy": "user2" },
+    { "id": 6, "title": "Add email notifications", "description": "Send email when task status changes", "status": "OPEN", "priority": "LOW", "categoryId": 2, "createdBy": "user1" },
+    { "id": 7, "title": "Setup CI/CD pipeline", "description": "Configure GitHub Actions for automated testing and deployment", "status": "DONE", "priority": "HIGH", "categoryId": 2, "createdBy": "user3" },
+    { "id": 8, "title": "Integration test suite", "description": "Write comprehensive integration tests for all API endpoints", "status": "IN_PROGRESS", "priority": "MEDIUM", "categoryId": 5, "createdBy": "user2" },
+    { "id": 9, "title": "Fix memory leak in reports", "description": "Reports generation causing memory leak when processing large datasets", "status": "OPEN", "priority": "HIGH", "categoryId": 1, "createdBy": "user1" },
+    { "id": 10, "title": "Add dark mode support", "description": "Implement dark mode theme toggle for the frontend", "status": "OPEN", "priority": "LOW", "categoryId": 2, "createdBy": "user3" },
+    { "id": 11, "title": "Evaluate database migration tools", "description": "Compare Flyway vs Liquibase for database schema migrations", "status": "DONE", "priority": "MEDIUM", "categoryId": 3, "createdBy": "user2" },
+    { "id": 12, "title": "Update security dependencies", "description": "Upgrade Spring Security and related dependencies to latest version", "status": "OPEN", "priority": "HIGH", "categoryId": 1, "createdBy": "user1" },
+    { "id": 13, "title": "Performance testing", "description": "Run load tests with JMeter to identify bottlenecks", "status": "IN_PROGRESS", "priority": "MEDIUM", "categoryId": 5, "createdBy": "user3" },
+    { "id": 14, "title": "Create onboarding guide", "description": "Write developer onboarding documentation for new team members", "status": "OPEN", "priority": "LOW", "categoryId": 4, "createdBy": "user2" },
+    { "id": 15, "title": "Implement file upload", "description": "Add file attachment support for tasks with S3 integration", "status": "OPEN", "priority": "MEDIUM", "categoryId": 2, "createdBy": "user1" },
+    { "id": 16, "title": "Fix pagination offset bug", "description": "Pagination returns wrong results when offset exceeds total count", "status": "DONE", "priority": "MEDIUM", "categoryId": 1, "createdBy": "user3" },
+    { "id": 17, "title": "Add rate limiting", "description": "Implement API rate limiting to prevent abuse", "status": "OPEN", "priority": "MEDIUM", "categoryId": 2, "createdBy": "user2" },
+    { "id": 18, "title": "Research GraphQL migration", "description": "Evaluate feasibility of migrating from REST to GraphQL", "status": "OPEN", "priority": "LOW", "categoryId": 3, "createdBy": "user1" },
+    { "id": 19, "title": "Unit test coverage report", "description": "Generate and review unit test coverage, aim for 80%+", "status": "IN_PROGRESS", "priority": "MEDIUM", "categoryId": 5, "createdBy": "user3" },
+    { "id": 20, "title": "API versioning strategy", "description": "Document and implement API versioning using URL path strategy", "status": "OPEN", "priority": "LOW", "categoryId": 4, "createdBy": "user2" }
+  ],
+  "comments": [
+    { "id": 1, "taskId": 1, "text": "I can reproduce this on iPhone 13 with Safari browser", "author": "user2" },
+    { "id": 2, "taskId": 1, "text": "Also happening on iPad Pro. Seems to be a flexbox issue.", "author": "user3" },
+    { "id": 3, "taskId": 2, "text": "Dashboard wireframes are approved. Starting implementation.", "author": "user2" },
+    { "id": 4, "taskId": 2, "text": "Should we include a chart library? Considering Chart.js vs D3.", "author": "user1" },
+    { "id": 5, "taskId": 3, "text": "Redis would be better for distributed caching scenarios.", "author": "user3" },
+    { "id": 6, "taskId": 4, "text": "Using springdoc-openapi for auto-generation. Works great!", "author": "user3" },
+    { "id": 7, "taskId": 5, "text": "Fixed by using ZonedDateTime instead of LocalDateTime.", "author": "user2" },
+    { "id": 8, "taskId": 8, "text": "Added tests for task CRUD. Working on category tests next.", "author": "user2" },
+    { "id": 9, "taskId": 9, "text": "Profiling shows the issue is in the PDF generation library.", "author": "user1" },
+    { "id": 10, "taskId": 9, "text": "Consider using async processing for large reports.", "author": "user3" },
+    { "id": 11, "taskId": 12, "text": "CVE-2024-xxxx affects our current version. Priority upgrade needed.", "author": "user1" },
+    { "id": 12, "taskId": 13, "text": "Initial load test shows 500ms p99 latency at 100 concurrent users.", "author": "user3" },
+    { "id": 13, "taskId": 15, "text": "Max file size should be 10MB. Need to configure multipart settings.", "author": "user1" },
+    { "id": 14, "taskId": 7, "text": "Pipeline is live! Builds trigger on push to main and PRs.", "author": "user3" },
+    { "id": 15, "taskId": 11, "text": "Flyway wins for simplicity. Liquibase is more powerful but complex.", "author": "user2" }
+  ]
+}

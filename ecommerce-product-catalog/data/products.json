@@ -1,0 +1,446 @@
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "description": "Premium noise-cancelling over-ear headphones with 30-hour battery",
+    "price": 79.99,
+    "category": "Electronics",
+    "tags": ["wireless", "bluetooth", "noise-cancelling"],
+    "imageUrl": "https://images.example.com/headphones-001.jpg",
+    "stock": 150
+  },
+  {
+    "name": "Organic Cotton T-Shirt",
+    "description": "Sustainable, ethically sourced cotton crew neck t-shirt",
+    "price": 29.99,
+    "category": "Clothing",
+    "tags": ["organic", "sustainable", "cotton"],
+    "stock": 300
+  },
+  {
+    "name": "JavaScript: The Good Parts",
+    "description": "Classic book on JavaScript best practices by Douglas Crockford",
+    "price": 24.99,
+    "category": "Books",
+    "tags": ["javascript", "programming", "web-development"],
+    "imageUrl": "https://images.example.com/js-good-parts.jpg",
+    "stock": 75
+  },
+  {
+    "name": "Stainless Steel Water Bottle",
+    "description": "Double-wall vacuum insulated 32oz water bottle, keeps drinks cold 24hrs",
+    "price": 34.99,
+    "category": "Home & Kitchen",
+    "tags": ["eco-friendly", "insulated", "reusable"],
+    "stock": 200
+  },
+  {
+    "name": "Yoga Mat Premium",
+    "description": "Extra thick 6mm non-slip yoga mat with carrying strap",
+    "price": 45.99,
+    "category": "Sports",
+    "tags": ["yoga", "fitness", "non-slip"],
+    "imageUrl": "https://images.example.com/yoga-mat-001.jpg",
+    "stock": 120
+  },
+  {
+    "name": "LEGO City Space Station",
+    "description": "890-piece building set with astronaut minifigures",
+    "price": 89.99,
+    "category": "Toys",
+    "tags": ["lego", "building", "space"],
+    "stock": 60
+  },
+  {
+    "name": "Vitamin C Serum",
+    "description": "Professional-grade 20% vitamin C facial serum with hyaluronic acid",
+    "price": 19.99,
+    "category": "Beauty",
+    "tags": ["skincare", "anti-aging", "vitamin-c"],
+    "stock": 250
+  },
+  {
+    "name": "Organic Green Tea",
+    "description": "Premium Japanese matcha green tea, 100 tea bags",
+    "price": 15.99,
+    "category": "Food & Beverages",
+    "tags": ["organic", "tea", "japanese"],
+    "stock": 400
+  },
+  {
+    "name": "USB-C Fast Charger",
+    "description": "65W GaN fast charger with dual USB-C and USB-A ports",
+    "price": 39.99,
+    "category": "Electronics",
+    "tags": ["charger", "usb-c", "fast-charging"],
+    "stock": 180
+  },
+  {
+    "name": "Slim Fit Denim Jeans",
+    "description": "Classic blue slim fit denim jeans, stretch comfort fabric",
+    "price": 59.99,
+    "category": "Clothing",
+    "tags": ["denim", "slim-fit", "casual"],
+    "stock": 220
+  },
+  {
+    "name": "Clean Code",
+    "description": "A Handbook of Agile Software Craftsmanship by Robert C. Martin",
+    "price": 32.99,
+    "category": "Books",
+    "tags": ["programming", "software-engineering", "best-practices"],
+    "stock": 90
+  },
+  {
+    "name": "Cast Iron Skillet 12-inch",
+    "description": "Pre-seasoned cast iron skillet, oven safe to 500F",
+    "price": 44.99,
+    "category": "Home & Kitchen",
+    "tags": ["cooking", "cast-iron", "kitchen"],
+    "stock": 85
+  },
+  {
+    "name": "Resistance Bands Set",
+    "description": "Set of 5 resistance bands with different tension levels",
+    "price": 24.99,
+    "category": "Sports",
+    "tags": ["fitness", "resistance", "workout"],
+    "stock": 300
+  },
+  {
+    "name": "Remote Control Drone",
+    "description": "Mini quadcopter drone with HD camera and 20-minute flight time",
+    "price": 129.99,
+    "category": "Toys",
+    "tags": ["drone", "rc", "camera"],
+    "stock": 45
+  },
+  {
+    "name": "Moisturizing Face Cream",
+    "description": "Daily moisturizer with SPF 30 and hyaluronic acid",
+    "price": 28.99,
+    "category": "Beauty",
+    "tags": ["moisturizer", "spf", "daily-care"],
+    "stock": 175
+  },
+  {
+    "name": "Dark Chocolate Assortment",
+    "description": "Artisan dark chocolate collection, 24 pieces from around the world",
+    "price": 42.99,
+    "category": "Food & Beverages",
+    "tags": ["chocolate", "gourmet", "gift"],
+    "stock": 110
+  },
+  {
+    "name": "Mechanical Keyboard RGB",
+    "description": "Full-size mechanical keyboard with Cherry MX Blue switches and RGB backlight",
+    "price": 119.99,
+    "category": "Electronics",
+    "tags": ["keyboard", "mechanical", "rgb", "gaming"],
+    "stock": 95
+  },
+  {
+    "name": "Wool Winter Coat",
+    "description": "Premium merino wool blend winter coat, water-resistant",
+    "price": 189.99,
+    "category": "Clothing",
+    "tags": ["wool", "winter", "coat"],
+    "stock": 50
+  },
+  {
+    "name": "Design Patterns",
+    "description": "Elements of Reusable Object-Oriented Software by Gang of Four",
+    "price": 45.99,
+    "category": "Books",
+    "tags": ["programming", "design-patterns", "oop"],
+    "stock": 65
+  },
+  {
+    "name": "Bamboo Cutting Board Set",
+    "description": "Set of 3 organic bamboo cutting boards in different sizes",
+    "price": 29.99,
+    "category": "Home & Kitchen",
+    "tags": ["bamboo", "eco-friendly", "kitchen"],
+    "stock": 140
+  },
+  {
+    "name": "Running Shoes Ultra",
+    "description": "Lightweight running shoes with responsive foam and breathable mesh",
+    "price": 134.99,
+    "category": "Sports",
+    "tags": ["running", "shoes", "lightweight"],
+    "imageUrl": "https://images.example.com/running-shoes-001.jpg",
+    "stock": 180
+  },
+  {
+    "name": "Board Game Collection",
+    "description": "Classic board game set including chess, checkers, and backgammon",
+    "price": 39.99,
+    "category": "Toys",
+    "tags": ["board-game", "classic", "family"],
+    "stock": 130
+  },
+  {
+    "name": "Argan Oil Hair Treatment",
+    "description": "100% pure Moroccan argan oil for hair repair and shine",
+    "price": 22.99,
+    "category": "Beauty",
+    "tags": ["hair-care", "argan-oil", "natural"],
+    "stock": 200
+  },
+  {
+    "name": "Protein Bar Variety Pack",
+    "description": "24-count variety pack of high-protein energy bars",
+    "price": 35.99,
+    "category": "Food & Beverages",
+    "tags": ["protein", "snack", "energy"],
+    "stock": 320
+  },
+  {
+    "name": "4K Webcam Pro",
+    "description": "Ultra HD 4K webcam with auto-focus and noise-cancelling microphone",
+    "price": 89.99,
+    "category": "Electronics",
+    "tags": ["webcam", "4k", "streaming"],
+    "stock": 70
+  },
+  {
+    "name": "Linen Summer Dress",
+    "description": "Breathable linen midi dress, perfect for summer",
+    "price": 74.99,
+    "category": "Clothing",
+    "tags": ["linen", "summer", "dress"],
+    "stock": 90
+  },
+  {
+    "name": "The Pragmatic Programmer",
+    "description": "Your Journey to Mastery, 20th Anniversary Edition",
+    "price": 49.99,
+    "category": "Books",
+    "tags": ["programming", "career", "best-practices"],
+    "stock": 55
+  },
+  {
+    "name": "LED Desk Lamp",
+    "description": "Adjustable LED desk lamp with 5 brightness levels and USB charging port",
+    "price": 39.99,
+    "category": "Home & Kitchen",
+    "tags": ["lighting", "led", "desk"],
+    "stock": 160
+  },
+  {
+    "name": "Dumbbell Set Adjustable",
+    "description": "Adjustable dumbbell set 5-52.5 lbs with quick-change mechanism",
+    "price": 299.99,
+    "category": "Sports",
+    "tags": ["weights", "strength", "adjustable"],
+    "stock": 30
+  },
+  {
+    "name": "Puzzle 1000 Pieces World Map",
+    "description": "Beautiful world map jigsaw puzzle with 1000 pieces",
+    "price": 18.99,
+    "category": "Toys",
+    "tags": ["puzzle", "educational", "map"],
+    "stock": 200
+  },
+  {
+    "name": "Retinol Night Cream",
+    "description": "Advanced retinol night cream for wrinkle reduction and skin renewal",
+    "price": 34.99,
+    "category": "Beauty",
+    "tags": ["retinol", "anti-aging", "night-cream"],
+    "stock": 140
+  },
+  {
+    "name": "Cold Brew Coffee Concentrate",
+    "description": "Ready-to-drink cold brew coffee concentrate, makes 12 servings",
+    "price": 18.99,
+    "category": "Food & Beverages",
+    "tags": ["coffee", "cold-brew", "concentrate"],
+    "stock": 250
+  },
+  {
+    "name": "Portable Bluetooth Speaker",
+    "description": "Waterproof portable speaker with 360-degree sound and 12-hour battery",
+    "price": 59.99,
+    "category": "Electronics",
+    "tags": ["speaker", "bluetooth", "waterproof", "portable"],
+    "stock": 130
+  },
+  {
+    "name": "Athletic Performance Socks",
+    "description": "6-pack moisture-wicking athletic socks with arch support",
+    "price": 19.99,
+    "category": "Clothing",
+    "tags": ["socks", "athletic", "moisture-wicking"],
+    "stock": 500
+  },
+  {
+    "name": "Atomic Habits",
+    "description": "An Easy & Proven Way to Build Good Habits & Break Bad Ones by James Clear",
+    "price": 16.99,
+    "category": "Books",
+    "tags": ["self-help", "habits", "productivity"],
+    "stock": 200
+  },
+  {
+    "name": "Air Purifier HEPA",
+    "description": "True HEPA air purifier for rooms up to 500 sq ft",
+    "price": 149.99,
+    "category": "Home & Kitchen",
+    "tags": ["air-purifier", "hepa", "health"],
+    "stock": 40
+  },
+  {
+    "name": "Jump Rope Speed",
+    "description": "Weighted speed jump rope with ball bearings and adjustable length",
+    "price": 14.99,
+    "category": "Sports",
+    "tags": ["cardio", "jump-rope", "fitness"],
+    "stock": 350
+  },
+  {
+    "name": "Art Supplies Kit",
+    "description": "Complete art kit with colored pencils, markers, and sketchbook",
+    "price": 34.99,
+    "category": "Toys",
+    "tags": ["art", "creative", "drawing"],
+    "stock": 95
+  },
+  {
+    "name": "Sunscreen SPF 50",
+    "description": "Broad spectrum SPF 50 mineral sunscreen, reef safe",
+    "price": 16.99,
+    "category": "Beauty",
+    "tags": ["sunscreen", "spf", "reef-safe"],
+    "stock": 280
+  },
+  {
+    "name": "Mixed Nuts Premium",
+    "description": "Roasted and salted premium mixed nuts, 2lb container",
+    "price": 24.99,
+    "category": "Food & Beverages",
+    "tags": ["nuts", "snack", "healthy"],
+    "stock": 190
+  },
+  {
+    "name": "Wireless Mouse Ergonomic",
+    "description": "Ergonomic vertical wireless mouse with adjustable DPI",
+    "price": 34.99,
+    "category": "Electronics",
+    "tags": ["mouse", "ergonomic", "wireless"],
+    "stock": 200
+  },
+  {
+    "name": "Leather Wallet Bifold",
+    "description": "Genuine leather bifold wallet with RFID blocking technology",
+    "price": 49.99,
+    "category": "Clothing",
+    "tags": ["leather", "wallet", "rfid"],
+    "stock": 160
+  },
+  {
+    "name": "Sapiens: A Brief History",
+    "description": "A Brief History of Humankind by Yuval Noah Harari",
+    "price": 18.99,
+    "category": "Books",
+    "tags": ["history", "anthropology", "non-fiction"],
+    "stock": 170
+  },
+  {
+    "name": "French Press Coffee Maker",
+    "description": "34oz borosilicate glass French press with stainless steel frame",
+    "price": 24.99,
+    "category": "Home & Kitchen",
+    "tags": ["coffee", "french-press", "glass"],
+    "stock": 110
+  },
+  {
+    "name": "Tennis Racket Pro",
+    "description": "Professional-grade graphite tennis racket, pre-strung",
+    "price": 89.99,
+    "category": "Sports",
+    "tags": ["tennis", "racket", "professional"],
+    "stock": 55
+  },
+  {
+    "name": "Building Blocks Mega Set",
+    "description": "500-piece colorful building blocks compatible with major brands",
+    "price": 44.99,
+    "category": "Toys",
+    "tags": ["building", "blocks", "creative"],
+    "stock": 75
+  },
+  {
+    "name": "Lip Balm Organic Set",
+    "description": "Set of 6 organic lip balms in assorted flavors",
+    "price": 12.99,
+    "category": "Beauty",
+    "tags": ["lip-balm", "organic", "natural"],
+    "stock": 400
+  },
+  {
+    "name": "Olive Oil Extra Virgin",
+    "description": "Cold-pressed extra virgin olive oil from Italy, 500ml",
+    "price": 19.99,
+    "category": "Food & Beverages",
+    "tags": ["olive-oil", "italian", "cooking"],
+    "stock": 220
+  },
+  {
+    "name": "Smart Watch Fitness Tracker",
+    "description": "Fitness smartwatch with heart rate monitor, GPS, and 7-day battery",
+    "price": 199.99,
+    "category": "Electronics",
+    "tags": ["smartwatch", "fitness", "gps", "health"],
+    "stock": 80
+  },
+  {
+    "name": "Cashmere Scarf",
+    "description": "Luxurious 100% cashmere scarf, multiple colors available",
+    "price": 129.99,
+    "category": "Clothing",
+    "tags": ["cashmere", "luxury", "scarf"],
+    "stock": 70
+  },
+  {
+    "name": "Python Crash Course",
+    "description": "A Hands-On, Project-Based Introduction to Programming",
+    "price": 35.99,
+    "category": "Books",
+    "tags": ["python", "programming", "beginner"],
+    "stock": 145
+  },
+  {
+    "name": "Robot Vacuum Cleaner",
+    "description": "Smart robot vacuum with mapping, scheduling, and auto-dock",
+    "price": 279.99,
+    "category": "Home & Kitchen",
+    "tags": ["vacuum", "robot", "smart-home"],
+    "stock": 35
+  },
+  {
+    "name": "Soccer Ball Official",
+    "description": "FIFA-approved official match soccer ball, size 5",
+    "price": 39.99,
+    "category": "Sports",
+    "tags": ["soccer", "ball", "official"],
+    "stock": 100
+  },
+  {
+    "name": "Stuffed Animal Bear",
+    "description": "Soft plush teddy bear, 18 inches, hypoallergenic",
+    "price": 24.99,
+    "category": "Toys",
+    "tags": ["plush", "teddy-bear", "gift"],
+    "stock": 180
+  },
+  {
+    "name": "Perfume Floral Essence",
+    "description": "Elegant floral eau de parfum, 50ml, long-lasting fragrance",
+    "price": 64.99,
+    "category": "Beauty",
+    "tags": ["perfume", "floral", "fragrance"],
+    "stock": 90
+  }
+]

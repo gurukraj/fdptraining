@@ -1,0 +1,75 @@
+{
+  "students": [
+    {"student_id": "STU001", "name": "Alice Johnson"},
+    {"student_id": "STU002", "name": "Bob Smith"},
+    {"student_id": "STU003", "name": "Charlie Brown"},
+    {"student_id": "STU004", "name": "Diana Ross"},
+    {"student_id": "STU005", "name": "Edward Chen"},
+    {"student_id": "STU006", "name": "Fiona Williams"},
+    {"student_id": "STU007", "name": "George Kumar"},
+    {"student_id": "STU008", "name": "Hannah Lee"},
+    {"student_id": "STU009", "name": "Ivan Petrov"},
+    {"student_id": "STU010", "name": "Julia Martinez"}
+  ],
+  "scores": [
+    {"student_id": "STU001", "subject": "Mathematics", "score": 95},
+    {"student_id": "STU001", "subject": "Physics", "score": 88},
+    {"student_id": "STU001", "subject": "Chemistry", "score": 92},
+    {"student_id": "STU001", "subject": "English", "score": 78},
+    {"student_id": "STU001", "subject": "Computer Science", "score": 97},
+
+    {"student_id": "STU002", "subject": "Mathematics", "score": 72},
+    {"student_id": "STU002", "subject": "Physics", "score": 68},
+    {"student_id": "STU002", "subject": "Chemistry", "score": 75},
+    {"student_id": "STU002", "subject": "English", "score": 82},
+    {"student_id": "STU002", "subject": "Computer Science", "score": 70},
+
+    {"student_id": "STU003", "subject": "Mathematics", "score": 85},
+    {"student_id": "STU003", "subject": "Physics", "score": 90},
+    {"student_id": "STU003", "subject": "Chemistry", "score": 78},
+    {"student_id": "STU003", "subject": "English", "score": 88},
+    {"student_id": "STU003", "subject": "Computer Science", "score": 82},
+
+    {"student_id": "STU004", "subject": "Mathematics", "score": 91},
+    {"student_id": "STU004", "subject": "Physics", "score": 94},
+    {"student_id": "STU004", "subject": "Chemistry", "score": 89},
+    {"student_id": "STU004", "subject": "English", "score": 96},
+    {"student_id": "STU004", "subject": "Computer Science", "score": 93},
+
+    {"student_id": "STU005", "subject": "Mathematics", "score": 63},
+    {"student_id": "STU005", "subject": "Physics", "score": 58},
+    {"student_id": "STU005", "subject": "Chemistry", "score": 61},
+    {"student_id": "STU005", "subject": "English", "score": 70},
+    {"student_id": "STU005", "subject": "Computer Science", "score": 55},
+
+    {"student_id": "STU006", "subject": "Mathematics", "score": 88},
+    {"student_id": "STU006", "subject": "Physics", "score": 76},
+    {"student_id": "STU006", "subject": "Chemistry", "score": 84},
+    {"student_id": "STU006", "subject": "English", "score": 91},
+    {"student_id": "STU006", "subject": "Computer Science", "score": 79},
+
+    {"student_id": "STU007", "subject": "Mathematics", "score": 45},
+    {"student_id": "STU007", "subject": "Physics", "score": 52},
+    {"student_id": "STU007", "subject": "Chemistry", "score": 38},
+    {"student_id": "STU007", "subject": "English", "score": 60},
+    {"student_id": "STU007", "subject": "Computer Science", "score": 48},
+
+    {"student_id": "STU008", "subject": "Mathematics", "score": 100},
+    {"student_id": "STU008", "subject": "Physics", "score": 98},
+    {"student_id": "STU008", "subject": "Chemistry", "score": 95},
+    {"student_id": "STU008", "subject": "English", "score": 92},
+    {"student_id": "STU008", "subject": "Computer Science", "score": 99},
+
+    {"student_id": "STU009", "subject": "Mathematics", "score": 77},
+    {"student_id": "STU009", "subject": "Physics", "score": 81},
+    {"student_id": "STU009", "subject": "Chemistry", "score": 73},
+    {"student_id": "STU009", "subject": "English", "score": 85},
+    {"student_id": "STU009", "subject": "Computer Science", "score": 80},
+
+    {"student_id": "STU010", "subject": "Mathematics", "score": 69},
+    {"student_id": "STU010", "subject": "Physics", "score": 74},
+    {"student_id": "STU010", "subject": "Chemistry", "score": 66},
+    {"student_id": "STU010", "subject": "English", "score": 71},
+    {"student_id": "STU010", "subject": "Computer Science", "score": 62}
+  ]
+}

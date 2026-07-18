@@ -1,0 +1,16 @@
+# PostgreSQL configuration - use with: --spring.profiles.active=postgres
+# Requires PostgreSQL running (see docker-compose.yml)
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskdb
+    driver-class-name: org.postgresql.Driver
+    username: taskuser
+    password: taskpass
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  h2:
+    console:
+      enabled: false

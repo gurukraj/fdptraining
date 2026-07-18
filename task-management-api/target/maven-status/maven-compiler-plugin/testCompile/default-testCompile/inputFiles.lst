@@ -1,0 +1,6 @@
+/home/gurukraj/github/faculty-program/task-management-api/src/test/java/com/workshop/taskmanager/TaskManagerApplicationTests.java
+/home/gurukraj/github/faculty-program/task-management-api/src/test/java/com/workshop/taskmanager/controller/CategoryControllerTest.java
+/home/gurukraj/github/faculty-program/task-management-api/src/test/java/com/workshop/taskmanager/controller/CommentControllerTest.java
+/home/gurukraj/github/faculty-program/task-management-api/src/test/java/com/workshop/taskmanager/controller/TaskControllerTest.java
+/home/gurukraj/github/faculty-program/task-management-api/src/test/java/com/workshop/taskmanager/service/CategoryServiceTest.java
+/home/gurukraj/github/faculty-program/task-management-api/src/test/java/com/workshop/taskmanager/service/TaskServiceTest.java

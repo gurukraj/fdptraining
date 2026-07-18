@@ -1,0 +1,35 @@
+{
+  "name": "Task Management API - Java/Spring Boot",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": "true"
+    }
+  },
+  "postCreateCommand": "mvn clean compile -DskipTests",
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-spring-boot",
+        "vscjava.vscode-spring-initializr"
+      ],
+      "settings": {
+        "java.configuration.runtimes": [
+          {
+            "name": "JavaSE-21",
+            "default": true
+          }
+        ]
+      }
+    }
+  },
+  "portsAttributes": {
+    "8080": {
+      "label": "Spring Boot Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
