@@ -1,7 +1,7 @@
 {
   "name": "Weather Dashboard API - Python/Flask",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "pip install -r requirements.txt && python seed_database.py",
+  "postCreateCommand": "echo 'Python 3.12 environment ready. Install dependencies with: pip install -r requirements.txt'",
   "forwardPorts": [5000],
   "customizations": {
     "vscode": {

@@ -1,7 +1,7 @@
 {
   "name": "E-Commerce Product Catalog - Node.js/Express",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
-  "postCreateCommand": "npm install && npm run seed",
+  "postCreateCommand": "echo 'Node.js 20 environment ready. Install dependencies with: npm install'",
   "forwardPorts": [3000],
   "customizations": {
     "vscode": {

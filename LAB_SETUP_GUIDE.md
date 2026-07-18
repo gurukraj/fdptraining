@@ -217,8 +217,8 @@ If you prefer to run locally instead of using Codespaces:
 - Git
 
 ```bash
-git clone https://github.com/<org>/faculty-program.git
-cd faculty-program/<project-name>
+git clone https://github.com/gurukraj/fdptraining.git
+cd fdptraining/<project-name>
 # Follow the project-specific commands above
 ```
 

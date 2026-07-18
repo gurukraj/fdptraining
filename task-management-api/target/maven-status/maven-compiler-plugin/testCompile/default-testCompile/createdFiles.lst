@@ -1,6 +1,0 @@
-com/workshop/taskmanager/TaskManagerApplicationTests.class
-com/workshop/taskmanager/controller/CommentControllerTest.class
-com/workshop/taskmanager/controller/TaskControllerTest.class
-com/workshop/taskmanager/controller/CategoryControllerTest.class
-com/workshop/taskmanager/service/TaskServiceTest.class
-com/workshop/taskmanager/service/CategoryServiceTest.class

@@ -7,7 +7,7 @@
       "installMaven": "true"
     }
   },
-  "postCreateCommand": "mvn clean compile -DskipTests",
+  "postCreateCommand": "echo 'Java 21 + Maven environment ready. Build with: mvn clean compile -DskipTests'",
   "forwardPorts": [8080],
   "customizations": {
     "vscode": {

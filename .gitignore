@@ -1,0 +1,46 @@
+# Solution / Implementation files — keep locally, never push
+*.pptx
+*.pptx:*
+__pycache__/
+*.pyc
+.pytest_cache/
+*.swp
+*.swo
+
+# Python build scripts
+build_presentation.py
+consolidate_deck.py
+part*.py
+slide_helpers.py
+
+# Full SDD documents (solutions)
+SDD_*.md
+Faculty_Project_*.md
+Homework_*.md
+
+# Project solution code and dependencies
+*/app/
+*/src/
+*/tests/
+*/data/
+*/target/
+*/.speckit/
+*/node_modules/
+*/requirements.txt
+*/package.json
+*/package-lock.json
+*/pom.xml
+*/seed_database.py
+*/docker-compose.yml
+*/README.md
+*/SDD_EXECUTIVE_SUMMARY.md
+*/TECH_STACK.md
+
+# Sensitive files
+problem-statements/git_token.txt
+problem-statements/environment_setup.txt
+problem-statements/.*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
