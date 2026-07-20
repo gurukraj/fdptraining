@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speckit + GitHub Codespaces Lab Guide</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 24px; color: #1f2937; }
+    h1, h2, h3 { color: #0f172a; }
+    code, pre { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; }
+    pre { padding: 12px; overflow-x: auto; }
+    .card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Speckit + GitHub Codespaces Lab Guide for fdptraining</h1>
+  <p>This guide walks through all problem statements in the repository and shows how to implement each one inside GitHub Codespaces using a Speckit-style workflow.</p>
+
+  <h2>Repository labs</h2>
+  <ul>
+    <li>Student Grade Calculator: <a href="problem-statements/PS_Student_Grade_Calculator.raw.txt">problem-statements/PS_Student_Grade_Calculator.raw.txt</a></li>
+    <li>Weather Dashboard API: <a href="problem-statements/PS_Weather_Dashboard_API.raw.txt">problem-statements/PS_Weather_Dashboard_API.raw.txt</a></li>
+    <li>E-Commerce Product Catalog: <a href="problem-statements/PS_ECommerce_Product_Catalog.raw.txt">problem-statements/PS_ECommerce_Product_Catalog.raw.txt</a></li>
+    <li>Task Management API: <a href="problem-statements/PS_Task_Management_API.raw.txt">problem-statements/PS_Task_Management_API.raw.txt</a></li>
+  </ul>
+
+  <h2>Prerequisites</h2>
+  <ul>
+    <li>GitHub account</li>
+    <li>GitHub Codespaces access</li>
+    <li>Browser-based VS Code environment</li>
+    <li>The repository opened in Codespaces</li>
+  </ul>
+
+  <h2>Step 1: Open the repository in Codespaces</h2>
+  <ol>
+    <li>Open the repository on GitHub.</li>
+    <li>Click the green Code button.</li>
+    <li>Select the Codespaces tab.</li>
+    <li>Click Create codespace on main.</li>
+    <li>Wait for the Codespace to load.</li>
+  </ol>
+
+  <h2>Step 2: Use a Speckit-style workflow</h2>
+  <ol>
+    <li>Read the problem statement.</li>
+    <li>Extract the functional requirements and endpoints.</li>
+    <li>Ask your coding assistant to create an implementation plan.</li>
+    <li>Generate scaffolding and project files.</li>
+    <li>Implement features one requirement at a time.</li>
+    <li>Run tests and fix failures.</li>
+    <li>Refine until the success criteria are met.</li>
+  </ol>
+
+  <h2>Step 3: Create a branch for each lab</h2>
+  <pre><code>git checkout -b lab/student-grade-calculator
+</code></pre>
+  <p>Repeat the same pattern for the other labs.</p>
+
+  <div class="card">
+    <h2>Lab 1: Student Grade Calculator</h2>
+    <p><strong>Goal:</strong> Build a FastAPI grading service with validation, scoring, GPA, and reporting.</p>
+    <p><strong>Source:</strong> <a href="problem-statements/PS_Student_Grade_Calculator.raw.txt">problem-statements/PS_Student_Grade_Calculator.raw.txt</a></p>
+    <p><strong>Suggested prompt:</strong></p>
+    <pre><code>Implement the student grade calculator described in problem-statements/PS_Student_Grade_Calculator.raw.txt. Create the FastAPI app, SQLite models, validation, endpoints, and tests.</code></pre>
+    <p><strong>Commands:</strong></p>
+    <pre><code>cd student-grade-calculator
+pip install -r requirements.txt
+python seed_database.py
+pytest -v
+uvicorn app.main:app --reload --port 8000</code></pre>
+    <p><strong>Verify:</strong> duplicate student IDs fail with 409, invalid scores fail with 422, GPA is calculated, and reports return statistics.</p>
+  </div>
+
+  <div class="card">
+    <h2>Lab 2: Weather Dashboard API</h2>
+    <p><strong>Goal:</strong> Build a Flask weather service with current conditions, forecasts, conversion, caching, alerts, favorites, and history.</p>
+    <p><strong>Source:</strong> <a href="problem-statements/PS_Weather_Dashboard_API.raw.txt">problem-statements/PS_Weather_Dashboard_API.raw.txt</a></p>
+    <p><strong>Suggested prompt:</strong></p>
+    <pre><code>Implement the weather dashboard API described in problem-statements/PS_Weather_Dashboard_API.raw.txt. Create a Flask app with SQLite-backed caching, mock weather data, conversion endpoints, alert configuration, favorites, history, and tests.</code></pre>
+    <p><strong>Commands:</strong></p>
+    <pre><code>cd weather-dashboard-api
+pip install -r requirements.txt
+python seed_database.py
+pytest -v
+flask --app app.main run --port 5000</code></pre>
+    <p><strong>Verify:</strong> city and coordinate lookups work, conversions are accurate, cache behavior is correct, and alerts are evaluated properly.</p>
+  </div>
+
+  <div class="card">
+    <h2>Lab 3: E-Commerce Product Catalog</h2>
+    <p><strong>Goal:</strong> Build an Express product catalog API with CRUD, inventory, soft delete, search, filtering, pagination, and analytics.</p>
+    <p><strong>Source:</strong> <a href="problem-statements/PS_ECommerce_Product_Catalog.raw.txt">problem-statements/PS_ECommerce_Product_Catalog.raw.txt</a></p>
+    <p><strong>Suggested prompt:</strong></p>
+    <pre><code>Implement the e-commerce product catalog API described in problem-statements/PS_ECommerce_Product_Catalog.raw.txt. Create an Express app with NeDB, validation, CRUD routes, soft delete and restore, stock adjustments, inventory queries, analytics endpoints, and tests.</code></pre>
+    <p><strong>Commands:</strong></p>
+    <pre><code>cd ecommerce-product-catalog
+npm install
+npm run seed
+npm test
+npm start</code></pre>
+    <p><strong>Verify:</strong> duplicate SKUs return 409, listings support filters and pagination, soft-delete is reversible, inventory adjustments prevent negative stock, and analytics are accurate.</p>
+  </div>
+
+  <div class="card">
+    <h2>Lab 4: Task Management API</h2>
+    <p><strong>Goal:</strong> Build a Spring Boot task manager with authentication, status transitions, categories, comments, soft delete, and audit logging.</p>
+    <p><strong>Source:</strong> <a href="problem-statements/PS_Task_Management_API.raw.txt">problem-statements/PS_Task_Management_API.raw.txt</a></p>
+    <p><strong>Suggested prompt:</strong></p>
+    <pre><code>Implement the task management API described in problem-statements/PS_Task_Management_API.raw.txt. Create a Spring Boot 3 project with JPA entities, request-header authentication, task status transitions, soft-delete behavior, category management, comments, audit logs, and tests.</code></pre>
+    <p><strong>Commands:</strong></p>
+    <pre><code>cd task-management-api
+mvn clean compile -DskipTests
+mvn spring-boot:run
+mvn test</code></pre>
+    <p><strong>Verify:</strong> missing headers cause 401, USER role is blocked from admin-only actions with 403, only valid status transitions are admitted, soft-delete cascades to comments, and audit logs are generated.</p>
+  </div>
+
+  <h2>Recommended order</h2>
+  <ol>
+    <li>Student Grade Calculator</li>
+    <li>Weather Dashboard API</li>
+    <li>E-Commerce Product Catalog</li>
+    <li>Task Management API</li>
+  </ol>
+
+  <h2>Best practices for Codespaces</h2>
+  <ul>
+    <li>Keep each lab in its own branch.</li>
+    <li>Use small commits after each milestone.</li>
+    <li>Run tests frequently.</li>
+    <li>Use the Ports tab to expose local services if needed.</li>
+    <li>Stop the Codespace when you are done to save compute time.</li>
+  </ul>
+</body>
+</html>
