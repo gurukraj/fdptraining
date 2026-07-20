@@ -153,7 +153,7 @@ mvn test
 ## Lab Exercise Workflow
 
 ### Phase 1: Understand the Problem (5 min)
-1. Read the problem statement from `problem-statements/PS_<ProjectName>.md`
+1. Read the problem statement from `problem-statements/PS_<ProjectName>.txt`
 2. Identify the functional requirements and API endpoints
 3. Note the data model and business rules
 
