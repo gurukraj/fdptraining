@@ -1,0 +1,78 @@
+Student Grade Calculator API
+
+Build a RESTful API that allows a university to manage student records, record exam scores, automatically calculate letter grades and GPAs, and generate class-wide statistics and performance reports.
+
+Scenario: The registrar's office needs a backend service to replace their spreadsheet-based grading workflow. The system must enforce strict validation, compute grades using a standard scale, and provide analytics endpoints for department heads.
+
+Technology stack:
+- Python 3.12+
+- FastAPI
+- SQLite
+- SQLAlchemy
+- Pydantic
+- pytest
+
+Functional requirements:
+
+FR-1 Add Student
+Register a new student with a unique student identifier and full name. The student_id must be 3 to 20 alphanumeric characters, the name must be 1 to 100 characters, and duplicate student_id values must return HTTP 409.
+
+FR-2 Record Score
+Record an integer score from 0 to 100 for a student in a specific subject. One score per subject per student is allowed. Recording a score must automatically calculate and store the letter grade and grade points.
+
+FR-3 Calculate Letter Grade
+Derive a letter grade and grade-point value from a numeric score using the standard scale. The values must be stored alongside the score record.
+
+FR-4 Calculate GPA
+Compute a student's GPA as the average of all grade-point values, rounded to 2 decimal places. If a student has no recorded scores, the GPA should be null.
+
+FR-5 Class Report
+Generate class-wide statistics that include per-subject averages, grade distribution, and top performers. The report should include average, minimum, maximum, and count per subject; counts per letter grade A/B/C/D/F; and a ranked list of students by GPA.
+
+FR-6 Reject Invalid Scores
+Return validation errors for non-integer, out-of-range, or fractional score values. The API must return HTTP 422 for any score that is not an integer in the range 0 to 100.
+
+Grade scale:
+- 90 to 100 -> A, 4.0
+- 80 to 89 -> B, 3.0
+- 70 to 79 -> C, 2.0
+- 60 to 69 -> D, 1.0
+- 0 to 59 -> F, 0.0
+
+API endpoints:
+- POST /api/students: Register a new student. Success: 201. Errors: 400, 409, 422.
+- GET /api/students: List all students. Success: 200.
+- GET /api/students/{student_id}: Get a single student with scores and GPA. Success: 200. Errors: 404.
+- POST /api/students/{student_id}/scores: Record a score for a subject. Success: 201. Errors: 404, 409, 422.
+- GET /api/students/{student_id}/report: Get an individual student's grade report. Success: 200. Errors: 404.
+- GET /api/reports/class-statistics: Get per-subject statistics and grade distribution. Success: 200.
+- GET /api/reports/top-performers: Get students ranked by GPA. Optional limit parameter. Success: 200.
+
+Data model:
+
+Student
+- id: integer, primary key, auto-increment
+- student_id: string, unique, 3 to 20 alphanumeric characters
+- name: string, 1 to 100 characters
+- created_at: datetime, auto-set on creation
+
+Score
+- id: integer, primary key, auto-increment
+- student_id: integer, foreign key to Student
+- subject: string, required, non-empty
+- score: integer, 0 to 100
+- letter_grade: string, derived from score using the grade scale
+- grade_points: float, derived from score using the grade scale
+- created_at: datetime, auto-set on creation
+
+Relationship: One student has many scores. A student can have at most one score per subject, enforced by a unique constraint on student and subject.
+
+Success criteria:
+- All API endpoints return correct status codes and response structures.
+- Duplicate student_id registration is rejected with HTTP 409.
+- Invalid scores are rejected with HTTP 422.
+- GPA is calculated as the average of grade points, rounded to 2 decimal places.
+- The class statistics endpoint returns per-subject aggregates and grade distribution counts.
+- The top performers endpoint returns students sorted by GPA descending.
+- The application starts cleanly and creates the database schema on first run.
+- Seed data can be loaded and queried successfully.
